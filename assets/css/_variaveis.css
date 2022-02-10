@@ -1,0 +1,18 @@
+:root {
+    --roxo-escuro: #6B46C1;
+    --roxo-claro: #F8F8FF;
+    --branco:  #FFFFFF;
+    --cinza: #718096;
+    --preto: #2D3748;
+
+    --familia-corpo: 'Inter', sans-serif;;
+    --familia-titulo: 'Inter', sans-serif;;
+
+    --peso-titulo: 700;
+    --peso-corpo: 400;
+
+    --tamanho-corpo: 1rem;
+    --tamanho-titulo-destaque: 3.4rem;
+    --tamanho-titulo: 1.8rem;
+    --tamanho-titulo-card: 1.25rem;
+}

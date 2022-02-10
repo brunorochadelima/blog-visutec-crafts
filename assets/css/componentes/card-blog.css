@@ -1,0 +1,49 @@
+.card-blog img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-blog {
+  max-width: 300px;
+  border-radius: 10px;
+  font-family: var(--familia-corpo);
+  color: var(--preto);
+  border: 1px solid rgba(192, 189, 189, 0.25);
+}
+
+.card-blog:hover {
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+.card-blog h2 {
+  padding: 1rem;
+  margin: 0;
+  padding-bottom: 0;
+  font-family: var(--familia-corpo);
+  font-size: 1.25rem;
+  color: var(--preto);
+}
+
+.card-blog p {
+  padding: 1rem;
+  font-family: var(--familia-corpo);
+  color: var(--cinza);
+  margin: 0;
+}
+
+.rodape-card {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+.rodape-card p:first-child {
+  color: var(--cinza);
+}
+
+.rodape-card p:last-child {
+  color: var(--roxo-escuro);
+  font-weight: 700;
+}

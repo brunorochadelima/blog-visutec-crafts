@@ -14,3 +14,7 @@
 body, footer {
  font-family: var(--familia-corpo)
 }
+
+a {
+  text-decoration: none;
+}

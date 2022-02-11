@@ -1,3 +1,5 @@
+/* Cards*/
+
 .card-blog img {
   max-width: 100%;
   height: auto;
@@ -11,7 +13,7 @@
   border: 1px solid rgba(192, 189, 189, 0.25);
 }
 
-.card-blog:hover {
+.card-blog:hover, .card-horizontal:hover {
   border: none;
   box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
   cursor: pointer;
@@ -47,3 +49,72 @@
   color: var(--roxo-escuro);
   font-weight: 700;
 }
+
+/* Card horizontal com largura de 100% após header */
+
+.card-horizontal {
+  display: flex;
+  border: 1px solid rgba(192, 189, 189, 0.25);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  gap: 2rem;
+}
+
+.card-horizontal h2 {
+  color: var(--preto);
+  font-size: var(--tamanho-titulo);
+}
+
+.card-horizontal p:last-child {
+  color: var(--roxo-escuro);
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.resumo-texto-blog {
+  color: var(--cinza);
+}
+
+@media screen and (max-width: 800px) {
+  .card-horizontal {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+
+/* Card horizontal com largura de 100% logo acima do footer */
+
+.card-horizontal-grande-home {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--roxo-claro);
+  border-radius: 10px;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.card-horizontal-grande-home--flex-item{
+  max-width: 300px;
+  align-self: center;
+}
+
+.card-horizontal-grande-home h2 {
+  color: var(--roxo-escuro);
+  font-size: var(--tamanho-titulo)
+}
+
+.card-horizontal-grande-home p:last-child {
+  color: var(--roxo-escuro);
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .card-horizontal-grande-home  {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+

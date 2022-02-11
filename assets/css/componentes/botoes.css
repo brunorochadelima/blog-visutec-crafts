@@ -19,3 +19,14 @@
   background-repeat: no-repeat;
   background-position: right 1rem center;
 }
+
+.botao-voltar {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: var(--roxo-escuro);
+  color: white;
+}
+
+
+

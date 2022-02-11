@@ -1,0 +1,24 @@
+.container-post {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+body, html {
+  color: var(--preto);
+  scroll-behavior: smooth;
+}
+
+.imagem-destaque {
+  text-align: center;
+}
+
+.imagem-destaque img {
+  max-width: 100%;
+  height: auto;
+}
+
+#icone-subir-topo {
+  position: absolute;
+  right: 15%;
+}

@@ -9,10 +9,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  background: #fff;
-}
-
 #header {
   height: 70px;
   padding-top: 1rem;
@@ -23,6 +19,7 @@ a:hover {
 
 #menu {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: .8rem;
 }

@@ -1,4 +1,3 @@
-**Projeto em desenvolvimento
 
 # Blog Visutec Crafts
 

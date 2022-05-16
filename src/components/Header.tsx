@@ -2,26 +2,33 @@ import React from 'react';
 import '../styles/Tema.scss';
 import { ReactComponent as Logo } from 'assets/logo-visutec-crafts.svg';
 import instagram from 'assets/icon-instagram.svg';
+import InputSearch from './InputSearch';
+import styles from 'components/Header.module.scss';
 
 export default function Header() {
   return (
     <div className="container">
-      <div className="columns pt-2 is-vcentered">
-        <div className="column is-narrow has-text-centered-mobile">
+      <div className={styles.flex}>
+        <div>
           <Logo />
         </div>
-        <div className="column has-text-centered">
-          <input type="search" />
+        <div>
+          <InputSearch />
         </div>
-        <div className="column has-text-centered is-narrow">
+        <div>
           <a
             className="mr-3"
             href="https://www.instagram.com/visuteccrafts/"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             <img src={instagram} alt="instagram" />
           </a>
-          <a href="https://www.instagram.com/visuteccrafts/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/visuteccrafts/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={instagram} alt="instagram" />
           </a>
         </div>

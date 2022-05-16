@@ -1,6 +1,5 @@
 import React from 'react';
 import 'styles/Tema.scss';
-import listaCards from 'data/cards.json';
 import {CardPost} from 'types/CardPost';
 
 export default function Card(props: CardPost) {

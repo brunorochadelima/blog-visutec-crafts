@@ -5,14 +5,20 @@ import instagram from 'assets/icon-instagram.svg';
 import facebook from 'assets/icon-facebook.svg';
 import InputSearch from './InputSearch';
 import styles from 'components/Header.module.scss';
+import GridCards from './cards/GridCards';
 
-export default function Header() {
+interface Props {
+  busca: string;
+  setBusca: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export default function Header({ busca, setBusca }: Props) {
   return (
     <div className="container">
       <div className={styles.flex}>
         <Logo className={styles.logo} />
         <div className="pb-4">
-          <InputSearch />
+          <InputSearch busca={busca} setBusca={setBusca} />
         </div>
         <div className={styles.social_icons}>
           <a

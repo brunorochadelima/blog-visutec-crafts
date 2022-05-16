@@ -1,3 +1,4 @@
+import BannerHeader from 'components/BannerHeader';
 import Card from 'components/cards/Card';
 import GridCards from 'components/cards/GridCards';
 import React from 'react';
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header />
+        <BannerHeader/>
         <GridCards/>
       </header>
     </div>

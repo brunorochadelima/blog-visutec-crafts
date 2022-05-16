@@ -4,7 +4,7 @@ import listaCards from 'data/cards.json';
 import {CardPost} from 'types/CardPost';
 
 export default function Card(props: CardPost) {
-  const { photo } = props;
+  const { photo, date, title, resume } = props;
 
   return (
     <div className="card">
@@ -16,15 +16,14 @@ export default function Card(props: CardPost) {
       <div className="card-content ">
         <div className="media">
           <div className="media-content">
-            <p className="title is-4">John Smith lorem ipsum</p>
+            <p className="title is-4">{title}</p>
           </div>
         </div>
         <div className="content has-text-grey-dark">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-          iaculis mauris.
+          {resume}
           <p className="pb-2" />
           <div className="is-flex is-justify-content-space-between">
-            <time>1 Jan 2016</time>
+            <time>{date}</time>
             <p className="has-text-primary ">Continue Lendo ❯</p>
           </div>
         </div>

@@ -3,12 +3,30 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: .5rem;
-  gap: .5rem
+  padding-top: 0.5rem;
+  gap: 0.5rem;
+}
+
+.social_icons img:hover {
+  transform: scale(1.1);
+  transition: .2s;
 }
 
 @media (max-width: 600px) {
   .flex {
     justify-content: center;
+  }
+
+  .logo {
+    max-width: 230px;
+    order: -2;
+  }
+
+  .social_icons {
+    order: -1;
+
+    img {
+      width: 40px;
+    }
   }
 }

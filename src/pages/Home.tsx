@@ -5,10 +5,17 @@ import React from 'react';
 
 export default function Home() {
   const [busca, setBusca] = React.useState('');
+
+  function exibirBanner() {
+    if (busca.length === 0) {
+      return <BannerHeader />;
+    }
+  }
+
   return (
     <>
       <Header busca={busca} setBusca={setBusca} />
-      <BannerHeader />
+      {exibirBanner()}
       <GridCards busca={busca} />
     </>
   );

@@ -10,6 +10,21 @@ export default function BannerHeader() {
   }
   return (
     <div className="container mt-3">
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+      <div className={styles.particle}></div>
+
       <div className={styles.container}>
         <div
           style={{ borderRadius: '10px' }}
@@ -18,6 +33,7 @@ export default function BannerHeader() {
           <div className="column has-text-centered">
             <img src={FotoCorteLaser} alt="" />
           </div>
+
           <div className="column">
             <h1 className="title is-1 is-size-3-mobile">
               Descubra um universo de{' '}
@@ -30,7 +46,6 @@ export default function BannerHeader() {
               className="button is-rounded is-primary is-outlined"
               onClick={lojaVisutecCrafts}
             >
-              <div className={styles.particle}></div>
               Loja Visutec Crafts
             </button>
           </div>

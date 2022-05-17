@@ -15,7 +15,7 @@ export default function Card(props: CardPost) {
       <div className="card-content ">
         <div className="media">
           <div className="media-content">
-            <p className="title is-4">{title}</p>
+            <p className="title is-5">{title}</p>
           </div>
         </div>
         <div className="content has-text-grey-dark">

@@ -14,7 +14,7 @@ export default function Card(props: CardPost) {
             <img src={photo} alt="Placeholder image" />
           </figure>
         </div>
-        <div className="card-content ">
+        <div className="card-content">
           <div className="media">
             <p className="title is-5">{title}</p>
           </div>

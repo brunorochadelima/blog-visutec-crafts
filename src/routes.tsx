@@ -1,3 +1,4 @@
+import Footer from 'components/Footer';
 import Home from 'pages/Home';
 import Pagina404 from 'pages/Pagina404';
 import Post from 'pages/Post';
@@ -13,6 +14,7 @@ export default function AppRoutes() {
           <Route path="*" element={<Pagina404 />} />
           <Route path="post/:id" element={<Post/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </main>
   );

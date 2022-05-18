@@ -6,6 +6,7 @@ import Pagina404 from './Pagina404';
 import 'styles/Tema.scss';
 import styles from 'pages/Post.module.scss';
 import Header from 'components/Header';
+import GridCards from 'components/cards/GridCards';
 
 export default function Post() {
   const navigate = useNavigate();
@@ -16,9 +17,16 @@ export default function Post() {
   }
   const [busca, setBusca] = React.useState('');
 
+  function mostrarGridCards() {
+    if (busca.length > 0) {
+      return <GridCards busca={busca} />;
+    }
+  }
+
   return (
     <section className="container">
-      <Header busca={busca} setBusca={setBusca}/>
+      <Header busca={busca} setBusca={setBusca} />
+      {mostrarGridCards()}
       <article className="column">
         <div className={styles.img_post}>
           <img src={post.photo} alt={post.title} />

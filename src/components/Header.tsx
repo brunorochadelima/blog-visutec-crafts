@@ -5,7 +5,7 @@ import instagram from 'assets/icon-instagram.svg';
 import facebook from 'assets/icon-facebook.svg';
 import InputSearch from './InputSearch';
 import styles from 'components/Header.module.scss';
-import GridCards from './cards/GridCards';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
   busca: string;
@@ -13,10 +13,12 @@ interface Props {
 }
 
 export default function Header({ busca, setBusca }: Props) {
+  const navigate = useNavigate();
+
   return (
     <div className="container">
       <div className={styles.flex}>
-        <Logo className={styles.logo} />
+        <Logo className={styles.logo} onClick={() => navigate('/')} />
         <div className="pb-4">
           <InputSearch busca={busca} setBusca={setBusca} />
         </div>

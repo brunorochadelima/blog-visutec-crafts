@@ -16,10 +16,10 @@ export default function Pagina404() {
         <div className={styles.container_imagem404}>
           <img src={Img404} alt="Ilustração 404" />
           <button
-            className="button is-primary mb-5"
+            className="button is-primary is-rounded is-medium mb-5"
             onClick={() => navigate(-1)}
           >
-            {'< Voltar'}
+            {'❮ Voltar'}
           </button>
         </div>
       </div>

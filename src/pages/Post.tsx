@@ -44,8 +44,8 @@ export default function Post() {
         <p className="is-size-5"> {post.description.paragrafo_2}</p>
         <br />
         <p className="is-size-5">{post.description.paragrafo_3}</p>
-        <button className="button is-primary my-6" onClick={() => navigate(-1)}>
-          {'< Voltar'}
+        <button className="button is-rounded is-medium is-primary mb-6" onClick={() => navigate(-1)}>
+          {'❮ Voltar'}
         </button>
       </article>
     </section>

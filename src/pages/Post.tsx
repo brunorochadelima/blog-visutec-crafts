@@ -17,16 +17,12 @@ export default function Post() {
   }
   const [busca, setBusca] = React.useState('');
 
-  function mostrarGridCards() {
-    if (busca.length > 0) {
-      return <GridCards busca={busca} />;
-    }
-  }
-
   return (
     <section className="container">
       <Header busca={busca} setBusca={setBusca} />
-      {mostrarGridCards()}
+
+      {busca.length > 0 ? <GridCards busca={busca} /> : ''}
+
       <article className="column">
         <div className={styles.img_post}>
           <img src={post.photo} alt={post.title} />
@@ -44,7 +40,10 @@ export default function Post() {
         <p className="is-size-5"> {post.description.paragrafo_2}</p>
         <br />
         <p className="is-size-5">{post.description.paragrafo_3}</p>
-        <button className="button is-rounded is-medium is-primary mb-6" onClick={() => navigate(-1)}>
+        <button
+          className="button is-rounded is-medium is-primary mb-6"
+          onClick={() => navigate(-1)}
+        >
           {'❮ Voltar'}
         </button>
       </article>

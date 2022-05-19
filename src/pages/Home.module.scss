@@ -1,0 +1,21 @@
+@media screen and (min-width: 980px) {
+  .imagemFooter {
+    height: 550px;
+    background-image: url(../assets/banner-visutec-crafts-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    image-rendering: pixelated;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .imagemFooter {
+    height: 500px;
+    background-image: url(../assets/banner-visutec-crafts-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    image-rendering: pixelated;
+  }
+}

@@ -1,10 +1,8 @@
 import React from 'react';
-import listaCards from 'data/cards.json';
 import Card from './Card';
 import 'styles/Tema.scss';
 import styles from 'components/cards/GridCards.module.scss';
 import cards from 'data/cards.json';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { CardPost } from 'types/CardPost';
 

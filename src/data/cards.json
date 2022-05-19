@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "photo": "/assets/img-posts/mulher-artesanato.png",
+    "photo": "/assets/img-posts/artesanato-visutec-crafts-1.jpg",
     "date": "29/04/2022",
     "title": "Lorem ipsum laoreet",
     "resume": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College",
@@ -62,7 +62,7 @@
 
   {
     "id": 6,
-    "photo": "/assets/img-posts/artesanato-visutec-crafts-5.jpg",
+    "photo": "/assets/img-posts/artesanato-visutec-crafts-6.jpg",
     "date": "29/04/2022",
     "title": "sem arcu purus dictum ",
     "resume": "are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable",
@@ -73,7 +73,7 @@
   },
   {
     "id": 7,
-    "photo": "/assets/img-posts/artesanato-visutec-crafts-6.jpg",
+    "photo": "/assets/img-posts/artesanato-visutec-crafts-7.jpg",
     "date": "01/06/2022",
     "title": "Praesent sed elit volutpat f",
     "resume": "There are many variations of passages of Lorem alteration in some form, by injected humour, or randomised words which don't look even slightly believable",
@@ -85,7 +85,7 @@
 
   {
     "id": 8,
-    "photo": "/assets/img-posts/artesanato-visutec-crafts-7.jpg",
+    "photo": "/assets/img-posts/artesanato-visutec-crafts-8.jpg",
     "date": "29/04/2022",
     "title": "Sapien lorem ultrices nisi felis",
     "resume": "m Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable",

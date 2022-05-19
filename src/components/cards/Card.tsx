@@ -10,7 +10,7 @@ export default function Card(props: CardPost) {
     <div className={styles.card}>
       <div className="card">
         <div className="card-image">
-          <figure className="image">
+          <figure className="image" style={{ objectFit: 'cover', overflow: 'hidden', height: '200px'}}>
             <img src={photo} alt="Placeholder image" />
           </figure>
         </div>

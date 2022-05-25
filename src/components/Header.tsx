@@ -6,14 +6,18 @@ import facebook from 'assets/icon-facebook.svg';
 import InputSearch from './InputSearch';
 import styles from 'components/Header.module.scss';
 import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { PesquisaContext } from 'context/Pesquisa';
 
-interface Props {
-  busca: string;
-  setBusca: React.Dispatch<React.SetStateAction<string>>;
-}
+// interface Props {
+//   busca: string;
+//   setBusca: React.Dispatch<React.SetStateAction<string>>;
+// }
 
-export default function Header({ busca, setBusca }: Props) {
+export default function Header() {
+  const {busca, setBusca} = useContext(PesquisaContext);
   const navigate = useNavigate();
+
 
   return (
     <div className="container">

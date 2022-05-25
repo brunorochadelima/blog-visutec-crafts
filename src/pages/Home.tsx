@@ -1,12 +1,14 @@
+import React from 'react';
 import BannerHeader from 'components/BannerHeader';
 import GridCards from 'components/cards/GridCards';
-import Header from 'components/Header';
-import React from 'react';
 import styles from 'pages/Home.module.scss';
 import 'styles/Tema.scss';
+import { useContext } from 'react';
+import { PesquisaContext } from 'context/Pesquisa';
 
 export default function Home() {
-  const [busca, setBusca] = React.useState('');
+  //const [busca, setBusca] = React.useState('');
+  const { busca, setBusca } = useContext(PesquisaContext);
 
   function exibirBanner() {
     if (busca.length === 0) {
@@ -16,9 +18,8 @@ export default function Home() {
 
   return (
     <>
-      <Header busca={busca} setBusca={setBusca} />
       {exibirBanner()}
-      <GridCards busca={busca} />
+      <GridCards />
       <div className="block">
         <div className={styles.imagemFooter}></div>
       </div>

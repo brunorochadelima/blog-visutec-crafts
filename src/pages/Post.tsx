@@ -5,23 +5,26 @@ import { useNavigate } from 'react-router-dom';
 import Pagina404 from './Pagina404';
 import 'styles/Tema.scss';
 import styles from 'pages/Post.module.scss';
-import Header from 'components/Header';
 import GridCards from 'components/cards/GridCards';
+import { useContext } from 'react';
+import { PesquisaContext } from 'context/Pesquisa';
 
 export default function Post() {
   const navigate = useNavigate();
   const { id } = useParams();
+  const { busca, setBusca } = useContext(PesquisaContext);
+
   const post = cards.find((item) => item.id === Number(id));
   if (!post) {
     return <Pagina404 />;
   }
-  const [busca, setBusca] = React.useState('');
+
+  //const [busca, setBusca] = React.useState('');
 
   return (
     <section className="container">
-      <Header busca={busca} setBusca={setBusca} />
 
-      {busca.length > 0 ? <GridCards busca={busca} /> : ''}
+      {busca.length > 0 ? <GridCards /> : ''}
 
       <article className="column">
         <div className={styles.img_post}>

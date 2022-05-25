@@ -11,7 +11,7 @@ export default function Pagina404() {
   const [busca, setBusca] = React.useState('');
   return (
     <div className="container has-text-centered">
-      <Header busca={busca} setBusca={setBusca} />
+      <Header />
       <div className="column">
         <div className={styles.container_imagem404}>
           <img src={Img404} alt="Ilustração 404" />

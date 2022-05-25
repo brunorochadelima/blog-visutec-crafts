@@ -5,14 +5,18 @@ import styles from 'components/cards/GridCards.module.scss';
 import cards from 'data/cards.json';
 import { useNavigate } from 'react-router-dom';
 import { CardPost } from 'types/CardPost';
+import { useContext } from 'react';
+import { PesquisaContext } from 'context/Pesquisa';
 
 interface Props {
   busca: string;
 }
 
-export default function GridCards(props: Props) {
+export default function GridCards() {
+  const { busca, setBusca } = useContext(PesquisaContext);
+
   const navigate = useNavigate();
-  const { busca } = props;
+  //const { busca } = props;
   const [lista, setLista] = React.useState(cards);
 
   function testaBusca(title: string) {

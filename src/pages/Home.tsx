@@ -8,7 +8,7 @@ import { PesquisaContext } from 'context/Pesquisa';
 
 export default function Home() {
   //const [busca, setBusca] = React.useState('');
-  const { busca, setBusca } = useContext(PesquisaContext);
+  const { busca } = useContext(PesquisaContext);
 
   function exibirBanner() {
     if (busca.length === 0) {

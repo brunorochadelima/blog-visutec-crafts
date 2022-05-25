@@ -12,7 +12,7 @@ import { PesquisaContext } from 'context/Pesquisa';
 export default function Post() {
   const navigate = useNavigate();
   const { id } = useParams();
-  const { busca, setBusca } = useContext(PesquisaContext);
+  const { busca } = useContext(PesquisaContext);
 
   const post = cards.find((item) => item.id === Number(id));
   if (!post) {

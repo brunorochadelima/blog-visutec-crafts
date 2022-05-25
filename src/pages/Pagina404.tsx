@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Pagina404() {
   const navigate = useNavigate();
-  const [busca, setBusca] = React.useState('');
   return (
     <div className="container has-text-centered">
       <Header />

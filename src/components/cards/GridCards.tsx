@@ -8,12 +8,8 @@ import { CardPost } from 'types/CardPost';
 import { useContext } from 'react';
 import { PesquisaContext } from 'context/Pesquisa';
 
-interface Props {
-  busca: string;
-}
-
 export default function GridCards() {
-  const { busca, setBusca } = useContext(PesquisaContext);
+  const { busca } = useContext(PesquisaContext);
 
   const navigate = useNavigate();
   //const { busca } = props;

@@ -1,3 +1,23 @@
+# Blog Visutec Crafts
+
+Blog para a marca visutec crafts.
+
+
+## 🎨 Demonstração
+
+![](https://i.postimg.cc/0QX8YZn3/calc.png) 
+
+
+
+## Link para o site
+
+ - [Clique aqui para acessar o blog](https://brunorochadelima.github.io/calculadora-imc/)
+ 
+## Autor
+
+- [@brunorochadelima](https://github.com/brunorochadelima)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -5,13 +5,13 @@ Blog para a marca visutec crafts.
 
 ## 🎨 Demonstração
 
-![](https://i.postimg.cc/0QX8YZn3/calc.png) 
+![](https://i.postimg.cc/XNtvYPqp/blog-visutec-crafts.png) 
 
 
 
 ## Link para o site
 
- - [Clique aqui para acessar o blog](https://brunorochadelima.github.io/calculadora-imc/)
+ - [Clique aqui para acessar o blog](https://blog-artesanato.netlify.app/)
  
 ## Autor
 
